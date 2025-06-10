@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Coach</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetCode Coach</h1>
+        <div class="input-container">
+            <input 
+                type="text" 
+                id="problemInput" 
+                placeholder="Enter a problem name or number (e.g., 'Two Sum' or '1')"
+                autocomplete="off"
+            >
+            <button id="getHintBtn">Get Hint</button>
+        </div>
+        <div id="loadingMessage" class="hidden">thinking...</div>
+        <div id="response" class="response-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
