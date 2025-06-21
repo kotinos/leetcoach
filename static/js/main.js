@@ -484,11 +484,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function initParticlesState() {
         const savedState = localStorage.getItem('particlesActive');
-        if (savedState === 'true') {
+        // If there is no saved state, default to true. Otherwise, use the saved state.
+        const shouldBeActive = savedState === null ? true : savedState === 'true';
+        
+        if (shouldBeActive) {
             particlesActive = true;
             particlesCanvas.classList.add('active');
             particlesToggle.classList.add('active');
-            animateParticles();
+            // Start the animation if it's not already running
+            if (!animationId) {
+                animateParticles();
+            }
+        } else {
+            particlesActive = false;
+            particlesCanvas.classList.remove('active');
+            particlesToggle.classList.remove('active');
         }
     }
 
