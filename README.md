@@ -10,8 +10,8 @@ LeetCode Coach is a web application designed to help you conquer LeetCode proble
 
 ### **Live Demo**
 
-*   **Main App:** `leetcoach.app`
-*   **Landing Page:** `leetcoach.app/landing`
+*   **Main App:** [`leetcoach.app`](https://leetcoach.app)
+*   **Landing Page:** [`leetcoach.app/landing`](https://leetcoach.app/landing)
 
 ---
 
