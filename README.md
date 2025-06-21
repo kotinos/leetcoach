@@ -4,17 +4,14 @@
 
 LeetCode Coach is a web application designed to help you conquer LeetCode problems by providing intelligent, conceptual hints without spoiling the solution. It's the perfect companion for when you're stuck and need a gentle push in the right direction.
 
-![LeetCode Coach Preview](https://i.imgur.com/your-screenshot.png) 
-*(Feel free to replace this with your own screenshot!)*
+![LeetCode Coach Preview](landing.png) 
 
 ---
 
 ### **Live Demo**
 
-*   **Main App:** `your-app-url.com`
-*   **Landing Page:** `your-app-url.com/landing`
-
-*(Replace with your deployed URLs)*
+*   **Main App:** `leetcoach.app`
+*   **Landing Page:** `leetcoach.app/landing`
 
 ---
 
