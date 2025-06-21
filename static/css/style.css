@@ -588,3 +588,54 @@ h1 {
     stroke: #e1306c;
     fill: #e1306c22;
 }
+
+/* Codedex Badge */
+.codedex-badge {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100000; /* Increased z-index to be above everything */
+    user-select: none;
+    padding: 10px 16px;
+    background: rgba(2, 6, 23, 0.8) !important; /* Made more opaque for debugging */
+    border-radius: 30px;
+    display: flex !important; /* Force display */
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.codedex-badge:hover, .codedex-badge:active, .codedex-badge:focus {
+    background: rgba(30, 41, 59, 0.9) !important;
+    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+}
+
+.codedex-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: cover;
+    display: block; /* Ensure image displays */
+}
+
+.codedex-badge .built-on-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff !important; /* Force white color */
+    display: inline-block;
+}
+
+.codedex-badge .codedex-label {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff !important; /* Force white color */
+    display: inline-block;
+}

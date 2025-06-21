@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetCode Coach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    </head>
+</head>
 <body>
     <div class="container">
         <div class="header">
@@ -55,6 +58,16 @@
             </div>
         </div>
     </div>
+    
+    <!-- Codédex badge -->
+    <a href="https://www.codedex.io/?utm_source=aaron&utm_medium=social_media&utm_campaign=ugc_creator_program" target="_blank" class="codedex-badge">
+        <span class="built-on-text">Built on</span>
+        <span style="display: flex; align-items: center; gap: 6px;">
+            <img src="https://www.codedex.io/images/coin-cropped.png" alt="Codédex Logo" class="codedex-img">
+            <span class="codedex-label">Codédex</span>
+        </span>
+    </a>
+    
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
