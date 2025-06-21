@@ -124,6 +124,10 @@ def sanitize_conversation_history(history):
 def index():
     return render_template('index.html')
 
+@app.route('/landing')
+def landing():
+    return render_template('landing.html')
+
 @app.route('/get_hint', methods=['POST'])
 def get_hint():
     data = request.json

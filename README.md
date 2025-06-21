@@ -1,67 +1,110 @@
-# LeetCode Coach
+# LeetCode Coach 🤖
 
-A friendly AI-powered coach that helps you learn LeetCode problems by providing conceptual hints and suggesting related practice problems.
+**Master LeetCode with AI-Powered Hints**
 
-## Features
+LeetCode Coach is a web application designed to help you conquer LeetCode problems by providing intelligent, conceptual hints without spoiling the solution. It's the perfect companion for when you're stuck and need a gentle push in the right direction.
 
-- Clean, modern user interface
-- Conceptual hints that guide your thinking without giving away solutions
-- Related problem suggestions to reinforce learning
-- Graceful error handling for unknown problems
-- Responsive design that works on all devices
+![LeetCode Coach Preview](https://i.imgur.com/your-screenshot.png) 
+*(Feel free to replace this with your own screenshot!)*
 
-## Setup
+---
 
-1. Clone this repository
-2. Set up a Python virtual environment (recommended):
-   ```bash
-   # Create a virtual environment
-   python3 -m venv venv
-   
-   # Activate the virtual environment
-   # On macOS/Linux:
-   source venv/bin/activate
-   # On Windows:
-   # .\venv\Scripts\activate
-   ```
-3. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Note: If you're using Python 3, you might need to use `pip3` instead of `pip` depending on your system configuration.
-4. Get a free API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-5. Create a `.env` file in the project root:
-   ```bash
-   # Create the .env file
-   touch .env
-   
-   # Add your API key to the .env file
-   echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
-   ```
-   Replace `your_gemini_api_key_here` with your actual Gemini API key from Google AI Studio.
-   
-   Note: Make sure to add `.env` to your `.gitignore` file to keep your API key secure.
-6. Run the application:
-   ```bash
-   python app.py
-   ```
-7. Open your browser and navigate to `http://localhost:5000`
+### **Live Demo**
 
-## Usage
+*   **Main App:** `your-app-url.com`
+*   **Landing Page:** `your-app-url.com/landing`
 
-1. Enter a LeetCode problem name or number in the input box
-2. Click "Get Hint" or press Enter
-3. Read the conceptual hint and suggested practice problem
-4. Try solving the problem with the hint in mind
-5. Practice the suggested related problem to reinforce the concept
+*(Replace with your deployed URLs)*
 
-## Technologies Used
+---
 
-- Backend: Flask (Python)
-- Frontend: HTML, CSS, JavaScript
-- AI: Google Gemini API
-- Styling: Custom CSS with modern design principles
+## ✨ Features
 
-## Contributing
+Based on the landing page, the app includes a wide range of features to enhance your learning experience:
 
-Feel free to submit issues and enhancement requests!
+*   **🤖 AI-Powered Hints:** Get intelligent, contextual guidance that helps you understand the underlying concepts without giving away the direct answer.
+*   **🎯 Personalized Guidance:** Provide context about your current approach or code, and the AI will tailor its hints to your specific situation.
+*   **🔄 Multiple Hint System:** If the first hint isn't enough, you can request another one that approaches the problem from a different angle.
+*   **⏱️ Built-in Pomodoro Timer:** Stay focused and manage your study sessions effectively with an editable Pomodoro timer right in the header.
+*   **🎨 Customizable UI:**
+    *   **Dark & Light Mode:** Switch between themes for comfortable coding day or night.
+    *   **Floating Code Particles:** An optional, aesthetically pleasing animated background that can be toggled on or off.
+*   **🔒 Secure & Private:** All user inputs are sanitized to protect against prompt injection, ensuring your interactions are safe.
+*   **🚀 Separate Landing Page:** A beautiful, responsive landing page to showcase the application to new users.
+
+---
+
+## 🛠️ Technologies Used
+
+*   **Backend:** Python (Flask)
+*   **Frontend:** HTML, CSS, JavaScript
+*   **AI Engine:** Google Gemini API
+*   **Deployment:** Gunicorn (for production WSGI)
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to get the project running on your local machine.
+
+### **Prerequisites**
+
+*   Python 3.x
+*   An API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+
+### **Installation**
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <your_repo_url>
+    cd leetcode-coach
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```bash
+    # Create
+    python3 -m venv venv
+    # Activate (macOS/Linux)
+    source venv/bin/activate
+    # Activate (Windows)
+    .\venv\Scripts\activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Set up your environment variables:**
+    Create a file named `.env` in the project root and add your Gemini API key.
+    ```
+    GEMINI_API_KEY=your_actual_gemini_api_key
+    ```
+
+### **Running the Application**
+
+1.  **Start the Flask server:**
+    ```bash
+    flask run
+    # Or for production testing with gunicorn
+    # gunicorn --bind 0.0.0.0:5000 app:app
+    ```
+
+2.  **Access the app in your browser:**
+    *   **Main App:** `http://127.0.0.1:5000/`
+    *   **Landing Page:** `http://127.0.0.1:5000/landing`
+
+---
+
+## 🧑‍💻 Built By
+
+This project was built by **ayo.aaronlin**.
+
+*   **Instagram:** [@ayo.aaronlin](https://www.instagram.com/ayo.aaronlin)
+*   **Codédex:** [Profile](https://www.codedex.io/?utm_source=aaron&utm_medium=social_media&utm_campaign=ugc_creator_program)
+
+---
+
+## 📜 License
+
+This project is open-source. Feel free to fork, modify, and use it as you see fit.
