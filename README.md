@@ -36,7 +36,7 @@ A friendly AI-powered coach that helps you learn LeetCode problems by providing 
    touch .env
    
    # Add your API key to the .env file
-   echo "GOOGLE_API_KEY=your_gemini_api_key_here" > .env
+   echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
    ```
    Replace `your_gemini_api_key_here` with your actual Gemini API key from Google AI Studio.
    
