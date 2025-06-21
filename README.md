@@ -17,8 +17,6 @@ LeetCode Coach is a web application designed to help you conquer LeetCode proble
 
 ## ✨ Features
 
-Based on the landing page, the app includes a wide range of features to enhance your learning experience:
-
 *   **🤖 AI-Powered Hints:** Get intelligent, contextual guidance that helps you understand the underlying concepts without giving away the direct answer.
 *   **🎯 Personalized Guidance:** Provide context about your current approach or code, and the AI will tailor its hints to your specific situation.
 *   **🔄 Multiple Hint System:** If the first hint isn't enough, you can request another one that approaches the problem from a different angle.
@@ -190,7 +188,7 @@ This guide uses **Waitress** as the WSGI server and **NSSM (the Non-Sucking Serv
 
 ## 🚌 Project Story: A Bus Ride Build
 
-A significant portion of this project was coded on a bus ride home from New York City. It's a testament to what can be built with focus, a laptop, and a long commute!
+This entire project was built on a bus ride home from NYC. 5 hours of motion sickness later, LeetCoach was born.
 
 Follow the journey and see behind-the-scenes footage on Instagram:
 
